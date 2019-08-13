@@ -7,6 +7,16 @@
             html {
                 height: 100%;
             }
+            body {
+                box-sizing: border-box;
+                padding: 0;
+                min-height: 100%;
+                height: 100%;
+                font-size: 16px;
+                font-family: 'Roboto', Arial, "Lucida Grande", sans-serif;
+                font-weight: 300;
+                line-height: 1.6rem;
+            }
             .main {
                 background: url('./background.jpg') no-repeat center center fixed; 
                 -webkit-background-size: cover;
@@ -17,7 +27,7 @@
                 margin: 0;
                 padding: 0;
                 display: flex;
-                flex-flow: row nowrap;
+                flex-flow: row wrap;
                 justify-content: center;
                 align-items: center;
                 align-content: center;
@@ -26,20 +36,92 @@
                 display: block;
                 max-width: 75vh;
             }
+            .liga,
+            .social {
+                width: 75vw;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
+            .social ul {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin: 0;
+                margin-top: -15vh;
+                padding: 0;
+            }
+            .social li {
+                display: inline-flex;
+                padding: 0 10px;
+            }
+            .social a {
+                display: inline-block;
+                color: #fff;
+                fill: #fff;
+                filter: invert(100%);
+            }
+            .social img {
+                width: 5vh;
+                height: 5vh;
+                display: block;
+                color: #fff;
+                fill: #fff;
+            }
+            .parceiro {
+                width: 75vw;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                align-content: flex-start;
+            }
+            .parceiro h3 {
+                display: block;
+                text-align: left;
+                font-size: 0.725em;
+                line-height: 1.4;
+                color: #fff;
+                width: 100%;
+                margin: 0;
+            }
+            .parceiro img {
+                display: block;
+                max-width: 15vh;
+                padding: 2.5vh;
+            }
+            
         </style>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#249b1f">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1a5727">
         <meta name="apple-mobile-web-app-title" content="Liga X BFV">
         <meta name="application-name" content="Liga X BFV">
         <meta name="msapplication-TileColor" content="#00a300">
-        <meta name="theme-color" content="#ffffff">
+        <meta name="theme-color" content="#1a5727">
     </head>
 
     <body class="main">
-        <img class="logo" src="liga-x-logo.png" alt="Liga X de Battlefield V no Xbox One">
+        <div class="liga">
+            <img class="logo" src="liga-x-logo.png" alt="Liga X de Battlefield V no Xbox One" title="Liga X de Battlefield V no Xbox One">
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="https://web.facebook.com/ligaxbr/" target="_blank" title="Fanpage da Liga X"><img src="./iconmonstr-facebook-4.svg" alt=""></a></li>
+                <li><a href="https://www.instagram.com/ligaxbr/" target="_blank" title="Perfil da Liga X"><img src="./iconmonstr-instagram-14.svg" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UC5GgZGSY-f5DvDugYFPwVjg?sub_confirmation=1" target="_blank" title="Canal da Liga X"><img src="./iconmonstr-youtube-4.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="parceiro">
+            <h3>Parceiros:</h3>
+            <a href="https://stelfcontroles.com.br" target="_blank" title="Stelf - Controles personalizados para gamers profissionais"><img src="https://stelfcontroles.com.br/wp-content/uploads/logo-stelf-controles-1.png" alt=""></a>
+        </div>
     </body>
 
 </html>
