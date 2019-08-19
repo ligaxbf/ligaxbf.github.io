@@ -103,6 +103,12 @@
                 display: block;
                 max-width: 15vh;
                 padding: 2.5vh;
+                filter: grayscale(1);
+                transition: filter .5s;
+            }
+            .parceiro img:hover, .parceiro img:active {
+                filter: none;
+                transition: filter .5s;
             }
             @media screen and (min-device-width: 280px) and (max-device-width: 767px) {
                 .parceiro h3 {font-size: 2em;}
@@ -135,6 +141,7 @@
             <h3>Parceiros:</h3>
             <a href="https://stelfcontroles.com.br" target="_blank" title="Stelf - Controles personalizados para gamers profissionais"><img src="https://stelfcontroles.com.br/wp-content/uploads/logo-stelf-controles-1.png" alt="Stelf Controles"></a>
             <a href="https://www.facebook.com/CBBFV/" target="_blank" title="1ª Copa do Brasil Controle - DS4"><img src="./copa-ds4.png" alt="1ªCopa Brasil CtrL"></a>
+            <a href="http://www.clanhost.com.br/" target="_blank" title="Clan Host - Agregador de campeonatos"><img src="./clan-host-logo.png" alt="Clan Host"></a>
         </div>
     </body>
 
