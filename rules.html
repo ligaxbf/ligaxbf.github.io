@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>1ª LIGA X - BATTLEFIELD V - REGRAS</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:200,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -21,7 +21,10 @@
             font-size: 16px;
             line-height: 1.2;
         }
-
+        .monospace {
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 200;
+        }
     </style>
 </head>
 <body>
@@ -706,19 +709,19 @@
                     <li class="mb-3">
                         <p class="mb-0"><strong>De 160 a 100 - Início da Partida</strong></p>
                         <p class="mb-0">Diferença dos tickets restantes maior e/ou menor que 50%.</p>
-                        <p class="mb-0"><em>Reinício do 0 da partida no próximo mapa.</em></p>
+                        <p class="mb-0 text-info"><em>Reinício do 0 da partida no próximo mapa.</em></p>
                     </li>
                     <li class="mb-3">
                         <p class="mb-0"><strong>De 99 a 50 - Meio da Partida</strong></p>
                         <p class="mb-0">Diferença dos tickets restantes maior e/ou menor que 50%.</p>
-                        <p class="mb-0"><em>Reinício do 0 da partida no próximo mapa.</em></p>
+                        <p class="mb-0 text-info"><em>Reinício do 0 da partida no próximo mapa.</em></p>
                     </li>
                     <li class="mb-3">
                         <p class="mb-0"><strong>De 49 a 0 - Fim da Partida</strong></p>
                         <p class="mb-0">Diferença dos tickets restantes maior que 50%.</p>
-                        <p class="mb-0"><em>Vitória para o time ganhador.</em></p>
+                        <p class="mb-0 text-info"><em>Vitória para o time ganhador.</em></p>
                         <p class="mb-0">Diferença dos tickets restantes menor que 50%.</p>
-                        <p class="mb-0"><em>Subitrai-se a diferênça da partida no próximo mapa.</em></p>
+                        <p class="mb-0 text-info"><em>Subitrai-se a diferênça da partida no próximo mapa.</em></p>
                     </li>
                 </ul>
                 <div class="alert alert-light">
@@ -744,20 +747,26 @@
                     <li>Cada equipe deve comunicar sua disponibilidade com o seu oponente.</li>
                     <li>Quando as duas equipes concordarem com a data e a hora em que ambas jogarão, confirme os detalhes de sua partida.</li>
                 </ul>
-                Nota: As regras acima devem ser informadas à organização com pelo menos 72 horas de antecedência para que seja preparada a partida.
+                
+                <div class="alert alert-light">
+                    <p class="mb-0"><small><strong>Nota:</strong> <em>As regras acima devem ser informadas à organização com pelo menos 48 horas de antecedência para que seja preparada a partida.</em></small></p>
+                </div>
+                
                 <h4>5.2 - DIA DA PARTIDA</h4>
                 <ul>
-                    <li>As equipes devem ter um de seus representantes nos bate-papos 30 minutos antes do início do jogo para comunicar quais jogadores convidar com o outro time e verificação da comissão de ética.</li>
-                    <li>As equipes têm um máximo de 15 minutos após o horário programado para que todos os seus jogadores participem do respectivo servidor usado no primeiro mapa da partida e prontos para jogar.</li>
+                    <li>As equipes devem estar prontas 30 minutos antes do início do confronto, para iniciar a verificação dos players junto à comissão de ética.</li>
+                    <li>As equipes têm um máximo de 15 minutos após o horário programado para que todos os seus jogadores sejam verificados e validados pelos fiscais da partida.</li>
                 </ul>
                 <h4>5.3 - ACIDENTES DO SERVIDOR</h4>
-                No caso de um servidor cair/travar durante uma rodada, use o seguinte procedimento:
+                <h5>No caso de um servidor cair/travar durante uma rodada, use o seguinte procedimento:</h5>
+                
                 <ul>
                     <li>Se o servidor travar DURANTE a primeira partida, a rodada deve ser totalmente repetida.</li>
                     <li>Se o servidor travar DURANTE o segundo ou terceiro mapa, as equipes serão obrigadas a reiniciar o confronto a partir do mapa onde houve a falha e continuar a contagem das partidas anteriores.</li>
                 </ul>
                 <h4>5.4 - ACIDENTES DO JOGADOR</h4>
-                No caso de um jogador cair/travar durante uma rodada, por favor use o seguinte procedimento:
+                <h5>No caso de um jogador cair/travar durante uma rodada, por favor use o seguinte procedimento:</h5>
+                
                 <ul>
                     <li>Se um jogador se desconectar antes do início da partida, a partida não deverá ser iniciada até que o membro consiga restabelecer a conexão.</li>
                     <li>Se um jogador se desconectar enquanto o mapa estiver em jogo, o jogador deve voltar ao mapa o mais rápido possível.</li>
@@ -778,14 +787,14 @@
                 <h4>6.1 - EQUIPES</h4>
                 <ul>
                     <li>Um único líder/responsável deverá fazer a inscrição da equipe, ficando este responsável por votar todos os itens da Liga X e transmitir as decisões aos membros da sua equipe. </li>
-                    <li>Cada equipe deverá inscrever um número mínimo de 10 players e o máximo de 16 jogadores;</li>
+                    <li>Cada equipe deverá inscrever um número mínimo de 10 e o máximo de 16 jogadores;</li>
                     <li>Será aceita somente a line de 8 jogadores por equipe, ficando o restante dos players escalados como reservas.</li>
                 </ul>
                 <h4>6.2 - MEMBROS</h4>
                 <ul>
                     <li>A ficha de inscrição deverá ser preenchida por cada player/jogador, ficando ele responsável pela sua transmissão e ciente das penalidades aplicadas a ele e sua equipe;</li>
                     <li>A ficha deve ser preenchida na integra com todos os dados de cada membro.</li>
-                    <li>Cada player inscrito estará de acordo com o TERMO DE CESSÃO DE USO DE IMAGEM anexado a ficha de inscrição. </li>
+                    <li>Cada player inscrito estará de acordo com o TERMO DE CESSÃO DE USO DE IMAGEM (TCUI) anexado a ficha de inscrição. </li>
                     <li>Ao preencher a ficha o player estará ciente e de acordo com todas as regras descritas neste documento.</li>
                     <li>Só serão aceitos nas partidas membros previamente cadastrados.</li>
                     <li>A Organização do Evento (LIGA X) se isenta de toda e qualquer responsabilidade das imagens apresentadas nas câmeras e vídeo-chamadas dos membros participantes do evento.</li>
@@ -808,9 +817,7 @@
                 <ul>
                     <li>Todos os players/jogadores são obrigados a fazer a videoconferência com a comissão de ética durante toda a partida; </li>
                     <li>Todos os membros devem transmitir ao vivo sua handcam;</li>
-                    <li>Serão indicados membros de clãs participantes da liga para acompanhar a fiscalização de cada confronto, garantindo a imparcialidade.</li>
-                </ul>
-                <ul>
+                    <li>Serão aceitos somente membros de clãs participantes da liga para acompanhar a fiscalização de cada confronto, garantindo a imparcialidade.</li>
                     <li>Antes do início do confronto é feita toda a verificação de cada player;</li>
                     <li>O player deverá mostrar todo console, parte da frente, laterais e de trás (conferência das portas USB);</li>
                     <li>Se houver algum fone ou controle que só funcione conectado, deverá mostrar ambos com ênfase, no caso do controle desde a saída do USB até a conexão no joystick;</li>
@@ -824,8 +831,7 @@
                     <li>Elite Dualshock / Elite Series 2 (Microsoft);</li>
                     <li>Scuf Adaptado (Stelf/GG Controles/Evzen/Dash);</li>
                     <li>Wolverine Ultimate (Razer);</li>
-                </ul>
-                
+                </ul>                
                 <div class="alert alert-light">
                     <p class="mb-0"><small><strong>Obs.:</strong> <em>É vetado o uso de Cabo USB caso o controle possua a opção de pilhas e/ou baterias.</em></small></p>
                 </div>
@@ -837,11 +843,11 @@
             <div class="col-md-12">
                 <h3>8 - PENALIDADES</h3>
                 <ul>
-                    <li>Se uma equipe violar uma restrição de Armas, Gadgets, Veículos e/ou Reforços. o mapa/partida em que o item foi usado será perdido e não o confronto inteiro;</li>
+                    <li>Se uma equipe violar uma restrição de Armas, Gadgets, Veículos e/ou Reforços. O mapa/partida em que o item foi usado será perdido e não o confronto na integra;</li>
                     <li>Se for comprovado uso de outro tipo de controle e/ou assessórios que não são permitidos nas regras, controle turbo ou periféricos a equipe será desclassificada e removida do campeonato e a vitória será data de imediato a equipe adversária; </li>
                     <li>Se o seu oponente usou algum dos itens proibidos em uma partida, faça uma captura de tela da mensagem de morte, mostrando seu inimigo usando-a. E encaminhe para a equipe de ética e fiscais da partida, para avaliarem e aplicar a punição.</li>
                     <li>As equipes serão obrigadas a relatar e fornecer provas de qualquer infração de regra no final do mapa/partida em que a infração ocorreu. Não podendo este usar a transmissão oficial como prova e não fazer isso pode anular qualquer penalidade para a equipe adversária.</li>
-                    <li>O membro que for pego tentando burlar as regras pode sofrer consequências graves também dentro do seu esquadrão (Clã).</li>
+                    <li>O membro que for pego tentando burlar as regras pode sofrer consequências graves, como proibição de participar de eventos futuros da Organização. Podendo se estender também ao seu esquadrão (Clã).</li>
                     <li>Todos os players, jogadores, líderes, responsáveis, equipes não podem aborrecer, atacar, atormentar, denegrir, difamar, fraudar, importunar, insultar a administração, comissão de ética e/ou a Liga X.</li>
                 </ul>
             </div>
@@ -850,19 +856,84 @@
     <div class="py-5">
         <div class="container">
             <div class="col-md-12">
+                <h3>REFERÊNCIAS:</h3>
+                <ul>
+                    <li><a href="https://league.esport-battlefield.com/" target="_blank">https://league.esport-battlefield.com/</a></li>
+                    <li><a href="https://battlefieldcommunityleague.com/" target="_blank">https://battlefieldcommunityleague.com/</a></li>
+                    <li><a href="https://web.facebook.com/CBBFV/" target="_blank">https://web.facebook.com/CBBFV/</a></li>
+                    <li><a href="https://www.facebook.com/LigaFairPlayBattlefield/" target="_blank">https://www.facebook.com/LigaFairPlayBattlefield/</a></li>
+                </ul>
+                <div class="alert alert-light">
+                    <p class="mb-0"><small><strong>Obs.:</strong> <em>As Regras da <strong>Liga X</strong> foram criadas com base nas referências acima e ajustes feitos pelos lideres, cordenadores e apoiadores. Sempre votados e discutidos com antecedência pelas equipes participantes.</em></small></p>
+                </div>
 
+                
+                <li><a href="https://www.facebook.com/yag.bf" target="_blank">https://www.facebook.com/yag.bf</a></li>
             </div>
         </div>
     </div>
     <div class="bg-light py-5">
         <div class="container">
             <div class="col-md-12">
-
+                <h3>LICENÇAS DEU USO</h3>
+                <p class="monospace">Copyright © LIGA X. Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled "GNU Free Documentation License".</p>
             </div>
         </div>
     </div>
+    <div class="py-5">
+        <div class="container">
+            <div class="col-md-12">
+                <h3>AGRADECIMENTOS:</h3>
+                <p>Agradecimento a todos os clãs participantes da primeira Liga X, que ajudaram na confecção das regras e acreditam na possibilidade de um jogo limpo e justo entre os players, visando a transparência e união entre a comunidade Battlefield TM.</p>
+                <ul>
+                    <li>
+                        <strong>[LOBO] Alcateia Alpha</strong> - <em>Ronaldo - Jake Delt4</em>
+                    </li>
+                    <li>
+                        <strong>[DIRE] Diretoria</strong> - <em>Rafael - BOA MORTE FPS</em>
+                    </li>
+                    <li>
+                        <strong>[ITA] Infantaria de Táticas Avançadas</strong> - <em>João Victor - Ghost RaMmsfan</em>
+                    </li>
+                    <li>
+                        <strong>[LOBO²] Alcateia Alpha</strong> - <em>Anderson - SEG LINE</em>
+                    </li>
+                    <li>
+                        <strong>[CTM] CONCHETUMARE</strong> - <em>Víctor - Deathman cl</em>
+                    </li>
+                    <li>
+                        <strong>[OPBR] Ordem e Progresso Brasila</strong> - <em>Daniel - CARDOSO DNL</em>
+                    </li>
+                    <li>
+                        <strong>[VMP] VAMPIROS</strong> - <em>Fernando - Feeeer6</em>
+                    </li>
+                    <li>
+                        <strong>[WARG] Warriors Arg</strong> - <em>Axel - WARG Braga</em>
+                    </li>
+                    <li>
+                        <strong></strong> - <em></em>
+                    </li>
+                </ul>
 
-    <script>
-    </script>
+                <ul>
+                    <li>
+                        <strong>[FURY] Fury of the Killers</strong> - <em>Herson - EvilSchluters</em>
+                    </li>
+                    <li>
+                        <strong>[AS] Alpha Squad</strong> - <em>Dieison - Dino2018Machado</em>
+                    </li>
+                    <li>
+                        <strong>[MALs] MALs</strong> - <em>Brendon - MALs SanTs</em>
+                    </li>
+                    <li>
+                        <strong>[BF] Brazilian Force</strong> - <em>Ananda - Nanda Roots</em>
+                    </li>
+                    <li>
+                        <strong>[GR8] Great</strong> - <em>Daniel - GR8 Hir0shi </em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
