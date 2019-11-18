@@ -32,12 +32,12 @@
                 </div>
         
                 <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-bomb"></i>
-                            Armas
+                    <li>
+                        <a href="#weapons_accessories" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <span class="icon"><i class="fas fa-bomb"></i></span>
+                            <span class="text">Armas</span>
                         </a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <ul class="collapse list-unstyled" id="weapons_accessories">
                             <li>
                                 <a class="goTo" href="#assalt">Assalto</a>
                             </li>
@@ -53,45 +53,45 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fas fa-university"></i>
-                            Mapas
+                        <a class="goTo" href="#maps">
+                            <span class="icon"><i class="fas fa-university"></i></span>
+                            <span class="text">Mapas</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-server"></i>
-                            Servidor
+                        <a href="#server" class="goTo">
+                            <span class="icon"><i class="fas fa-server"></i></span>
+                            <span class="text">Servidor</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-star"></i>
-                            Pontuação
+                        <a href="#points" class="goTo">
+                            <span class="icon"><i class="fas fa-star"></i></span>
+                            <span class="text">Pontuação</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-gamepad"></i>
-                            Jogos
+                        <a href="#game" class="goTo">
+                            <span class="icon"><i class="fas fa-gamepad"></i></span>
+                            <span class="text">Jogos</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-file-alt"></i>
-                            Inscrições
+                        <a href="#subscribe" class="goTo">
+                            <span class="icon"><i class="fas fa-file-alt"></i></span>
+                            <span class="text">Inscrições</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-eye"></i>
-                            Fiscalização
+                        <a href="#supervision" class="goTo">
+                            <span class="icon"><i class="fas fa-eye"></i></span>
+                            <span class="text">Fiscalização</span>
                         </a>
                     </li>                
                     <li>
-                        <a href="#">
-                            <i class="fas fa-skull"></i>
-                            Penalidades
+                        <a href="#penalty" class="goTo">
+                            <span class="icon"><i class="fas fa-skull"></i></span>
+                            <span class="text">Penalidades</span>
                         </a>
                     </li>
                 </ul>
@@ -107,8 +107,8 @@
                 </button>
             </div>
             
-            <div class="py-5">
-                <div class="container">
+            <div class="py-5 hr-b">
+                <div class="container-fluid">
                     <div class="row mb-4">
                         <div class="col-md-12">
                             <h3>1 – RESTRIÇÕES DE ARMAS E ACESSÓRIOS</h3>
@@ -681,9 +681,9 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-light py-5">
+            <div class="bg-light py-5 hr-b">
                 <div class="container">    
-                    <div class="row mb-4">
+                    <div class="row mb-4" id="maps">
                         <div class="col-md-12">
                             <h3>2 - MAPAS</h3>
                             <div class="alert alert-warning" role="alert">
@@ -724,9 +724,9 @@
                     </div>
                 </div>
             </div>
-            <div class="py-5">
+            <div class="py-5 hr-b">
                 <div class="container"> 
-                    <div class="row mb-4">
+                    <div class="row mb-4" id="server">
                         <div class="col-md-12">
                             <h3>3 - CONFIGURAÇÕES DO SERVIDOR</h3>
                             <div class="alert alert-warning" role="alert">
@@ -762,9 +762,9 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-light py-5">
+            <div class="bg-light py-5 hr-b">
                 <div class="container">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="points">
                         <h3>4 - PARTIDA &amp; PONTUAÇÃO</h3>
                         <h4>4.1 - MODO DE JOGO</h4>
                         <h5>CONQUISTA DE PELOTÃO</h5>
@@ -825,9 +825,9 @@
                     </div>
                 </div>
             </div>
-            <div class="py-5">
+            <div class="py-5 hr-b">
                 <div class="container">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="game">
                         <h3>5 - JOGOS</h3>
                         <h4>5.1 - ORGANIZAÇÃO</h4>
                         <ul>
@@ -867,9 +867,9 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-light py-5">
+            <div class="bg-light py-5 hr-b">
                 <div class="container">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="subscribe">
                         <h3>6 - INSCRIÇÕES</h3>
                         <h4>6.1 - EQUIPES</h4>
                         <ul>
@@ -889,9 +889,9 @@
                     </div>
                 </div>
             </div>
-            <div class="py-5">
+            <div class="py-5 hr-b">
                 <div class="container">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="supervision">
                         <h3>7 - FISCALIZAÇÃO</h3>
                         <h4>7.1 – ACOMPANHAMENTO AO VIVO (LIVE)</h4>
                         <ul>
@@ -925,9 +925,9 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-light py-5">
+            <div class="bg-light py-5 hr-b">
                 <div class="container">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="penalty">
                         <h3>8 - PENALIDADES</h3>
                         <ul>
                             <li>Se uma equipe violar uma restrição de Armas, Gadgets, Veículos e/ou Reforços. O mapa/partida em que o item foi usado será perdido e não o confronto na integra;</li>
@@ -940,7 +940,7 @@
                     </div>
                 </div>
             </div>
-            <div class="py-5">
+            <div class="py-5 hr-b">
                 <div class="container">
                     <div class="col-md-12">
                         <h3>REFERÊNCIAS:</h3>
@@ -956,7 +956,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-light py-5">
+            <div class="bg-light py-5 hr-b">
                 <div class="container">
                     <div class="col-md-12">
                         <h3>LICENÇAS DEU USO</h3>
@@ -1047,13 +1047,10 @@
         $(document).ready(function () {
             window.scrollTo(0,1);
             $('#sidebarCollapse').on('click', function () {
-                // open or close navbar
                 $('#sidebar').toggleClass('active');
-                // close dropdowns
-                $('.collapse.in').toggleClass('in');
-                // and also adjust aria-expanded attributes we use for the open/closed arrows
-                // in our CSS
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+            $('.dropdown-toggle').on('click', function() {
+                $(this).parent().toggleClass('active');
             });
 
             // Scroll to top button appear
