@@ -1,944 +1,1087 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>1ª LIGA X - BATTLEFIELD V - REGRAS</title>
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:200,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
 
 
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            line-height: 1.2;
-        }
-        .monospace {
-            font-family: 'Roboto Mono', monospace;
-            font-weight: 200;
-        }
     </style>
 </head>
-<body>
-    <div class="wrapper py-5">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h3>1 – RESTRIÇÕES DE ARMAS E ACESSÓRIOS</h3>
-                    <h4>1.1 - ARMAS:</h4>
+<body id="page-top">
+<div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="bg-dark">
+            <div class="pos-fixed">
+                <div class="sidebar-header">
+                    <img src="liga-x.svg" alt="">
                 </div>
+        
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-bomb"></i>
+                            Armas
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a class="goTo" href="#assalt">Assalto</a>
+                            </li>
+                            <li>
+                                <a class="goTo" href="#medic">Médico</a>
+                            </li>
+                            <li>
+                                <a class="goTo" href="#suport">Suporte</a>
+                            </li>
+                            <li>
+                                <a class="goTo" href="#sniper">Batedor</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-university"></i>
+                            Mapas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-server"></i>
+                            Servidor
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-star"></i>
+                            Pontuação
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-gamepad"></i>
+                            Jogos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-file-alt"></i>
+                            Inscrições
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-eye"></i>
+                            Fiscalização
+                        </a>
+                    </li>                
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-skull"></i>
+                            Penalidades
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h5>1.1.1 – Assalto:</h5>
-                </div>
-                <div class="table-responsive table-responsive-sm col-md-6">
-                    <h6>Fuzil de Assalto</h6>
-                    <table class="table table-sm table-striped table-bordered" data-resizable="true">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">Breda M1935 PG</td>
-                                <td class="text-success">Strumgewehr 1-5</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">M1907 SF</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">StG 44</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">Ribeyrolles 1918</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-responsive table-responsive-sm col-md-6">    
-                    <h6>Fuzil Semiautomático</h6>
-                    <table class="table table-sm table-striped table-bordered" data-resizable="true">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">Gewehr 43</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Carabina M1A1</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Turner SMLE</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Selbstlader 1916</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Gewehr 1-5</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Ag m/42</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">MAS 44</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Karabin 1938M</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">M1 Garand</td>
-                                <td class="text-success"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                    <i class="fas fa-align-left"></i>
+                    <span>Sumário</span>
+                </button>
             </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h5>1.1.2 – Médico:</h5>
-                </div>
-                <div class="table-responsive table-responsive-sm col-md-6">
-                    <h6>Submetralhadora</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">Type 100</td>
-                                <td class="text-success">STEN</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">Suomi KP/-31</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">MP40</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">MP28</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">EMP</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">MP34</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">M1928A1</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">ZK-383</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">MAB 38</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-responsive table-responsive-sm col-md-6">
-                    <h6>Carabina de Ferrolho</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">M28 con Tromboncino</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Carabina Commando</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Carabina Jungle</td>
-                                <td class="text-success"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h5>1.1.3 – Suporte:</h5>
-                </div>
-                <div class="table-responsive table-responsive-sm col-md-6">
-                    <h6>Metralhadora Leve</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">M. Madsen</td>
-                                <td class="text-success">KE7</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">LS/26</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">Bren</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">Lewis</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">FG-42</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-responsive table-responsive-sm col-md-6">
-                    <h6>Metralhadora Média</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">S2-200</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">MG 34</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">MG 42</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">VGO</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Metralhadora M1922</td>
-                                <td class="text-success"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-responsive table-responsive-sm col-md-6">
-                    <h6>Espingardas</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">12G Automática</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">M30 Drilling</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">M1987</td>
-                                <td class="text-success"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h5>1.1.4 – Batedor:</h5>
-                </div>
-                <div class="table-responsive table-responsive-sm col-md-6">
-                    <h6>Fuzil de Ferrolho</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">Type 99</td>
-                                <td class="text-success">Lee-Enfield No.4 Mk I</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">Gewehr M95/30</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">Krag-Jørgensen</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">Kar98k</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">Fuzil Ross Mk III</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>                
-                <div class="table-responsive table-responsive-sm col-md-6">
-                    <h6>Fuzil Auto-recarregável</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">RSC</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">SELBSTLADER 1906</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Modelo 8</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">ZH-29</td>
-                                <td class="text-success"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-responsive table-responsive-sm col-md-6">
-                    <h6>Pistola Carabina</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">Carabina P08</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Carabina de Trincheira</td>
-                                <td class="text-success"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-responsive table-responsive-sm col-md-6">
-                    <h6>Fuzil Antimaterial</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">Fuzil AT Boys</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Panzerbuchse 39</td>
-                                <td class="text-success"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h5>1.1.5 – Secundárias:</h5>
-                    <ul>
-                        <li>Todas as Armas Secundárias são <span data-title="permitida" class="text-success">permitidas</span> para uso.</li>
-                    </ul>
-                    <h5>1.1.6 – Armas Brancas:</h5>
-                    <ul>
-                        <li>Todas as Armas Brancas são <span data-title="permitida" class="text-success">permitidas</span> para uso.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h5>1.1.7 – Estacionárias e/ou Rebocáveis:</h5>
-                    <h6>Fixas e Estacionárias</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">FlaK 38 (Móvel/Fixa)</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">PaK 40 (Móvel/Fixa)</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">QF 6 pdr (Móvel/Fixa)</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Tripé M. P. Vickers (Fixa)</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Tripé MG34 (Fixa)</td>
-                                <td class="text-success"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h4>1.2 - GADGETS:</h4>
-                    <h5>1.2.1 – Acessórios:</h5>
-                    <h6>Acessórios</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">S 35 Bouncing Betty (Mina AP</td>
-                                <td class="text-success">Caixa de Munição</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Dinamite Adesiva</td>
-                                <td class="text-success">Bolsa de Munição</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Spawn Beacon</td>
-                                <td class="text-success">Caixa Médica</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Sinalizador/Pistola Flare</td>
-                                <td class="text-success">Bolsa Médica</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Chamariz de Batedor (Sniper Decoy</td>
-                                <td class="text-success">M49 Spotting Scope</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Tellermine (Mina AT</td>
-                                <td class="text-success">Panzerfaust 100</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">PIAT</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">SMLE Smoke Grenade Launcher</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">Rifle de Granada</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h4>1.3 - GRENADAS:</h4>
-                    <h5>1.3.1 - Granadas e Arremessáveis:</h5>
-                    <h6>Granadas e Arremessáveis</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">Faca de Arremesso/Throwing Knife</td>
-                                <td class="text-success">No. 36 Frag Grenade</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">M18 Smoke Grenade</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">No. 76 Incendiary Grenade</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">No. 74 Sticky Grenade</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">Geballte Ladung</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger"></td>
-                                <td class="text-success">No. 69 Impact Grenade</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h4>1.4 - VEÍCULOS:</h4>
-                    <h5>1.4.1 – Tanques:</h5>
-                    <ul>
-                        <li>Todos tanques de combate são <span class="text-danger">proibidos</span> para o uso.</li>
-                    </ul> 
-                    <h5>1.4.2 – Veículos:</h5>
-                    <ul>
-                        <li>Todos veículos de combate e/ou transporte são <span class="text-danger">proibidos</span> para o uso.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h4>1.5 - REFORÇOS:</h4>
-                    <h5>1.5.1 – Reforços de Esquadrão:</h5>
-                    <h6>Reforços do Esquadrão</h6>
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" width="50%">Proibida</th>
-                                <th scope="col" width="50%">Permitida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-danger">Artilharia Setorial</td>
-                                <td class="text-success">Suprimento Aéreo</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Foguete JB-2</td>
-                                <td class="text-success">Barragem de Fumaça</td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Foguete V-1</td>
-                                <td class="text-success"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-danger">Foguete Ki-147</td>
-                                <td class="text-success"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h4>1.6 - NOVAS ARMAS DO CURSOS DA GUERRA:</h4>
-                    <ul class="mb-0">
-                        <li>Novas armas são <span class="text-danger">proibidas</span> até que estejam disponíveis para compra por todos através de moedas do jogo.<br><small>Isso significa que até que novas armas estejam disponíveis apenas através de desafios semanais, elas não poderão ser usadas em partidas.</small>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-light py-5">
-        <div class="container">    
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h3>2 - MAPAS</h3>
-                    <div class="alert alert-warning" role="alert">
-                        <p class="mb-0"><small>Estas informações sofrerão alterações com o lançamento dos servidores privados "RFP".</small></p>
-                    </div>
-                    <h4>2.1 - VALÍDOS:</h4>
-                    <ul>
-                        <li>Arras</li>
-                        <li>Roterdã</li>
-                        <li>Hamada</li>
-                        <li>Fjell 652</li>
-                        <li>Al Sundan</li>
-                        <li>Devastação</li>
-                        <li>Narvik</li>
-                        <li>Mercúrio</li>
-                        <li>Marita</li>
-                        <li>Lofoten</li>
-                        <li>Provença</li>
-                        <li>Operação Subterrânea</li>
-                    </ul>                    
-                    <h4>1.2 - NÃO JOGÁVEIS:</h4>
-                    <ul>
-                        <li>Iwo Jima</li>
-                        <li>Tormenta do Pacífico</li>
-                    </ul>                    
-                    <div class="card">
-                            <div class="card-header"><strong>IMPORTANTE:</strong></div>
-                            <div class="card-body">
-                                <p class="card-text">Todos os mapas válidos estarão disponíveis para o confronto. Ficando o primeiro mapa para organização das equipes e aquecimento e o próximo iniciará o confronto.<br>
-                                    Mapas novos lançados durante o evento serão analisados e discutidos entre a organização e os líderes das equipes.</p>
-                                <blockquote class="blockquote">
-                                    <p class="mb-0">É estritamente <span class="text-danger">proibido</span> o uso de <abbr title="É a atividade em que uma pessoa encontra e explora falhas do jogo">gliches</abbr> nos mapas.</p>
-                                    <footer class="blockquote-footer">Usar falha do jogo ou mapa para tirar proveito sobre seu adversário.</footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="py-5">
-        <div class="container"> 
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h3>3 - CONFIGURAÇÕES DO SERVIDOR</h3>
-                    <div class="alert alert-warning" role="alert">
-                        <p class="mb-0"><small>Estas informações sofrerão alterações com o lançamento dos servidores privados "RFP".</small></p>
-                    </div>
-                    <h4>INSTRUÇÕES: </h4>
-                    <h5>Como usar um servidor público para jogo competitivo:</h5>
-                    <ol>
-                        <li>Os líderes de Pelotão devem criar e formar suas equipes. Clicando com o botão “RT” no menu do Battlefield. Os demais membros devem aceitar o convite e aguardar.</li>
-                        <li>No menu principal escolha a opção "JOGAR", logo escolha a opção "MULTIPLAYER", neste, escolha a opção "CONQUISTA DE PELOTÃO" no Menu lateral direito.</li>
-                        <li>Em um movimento sincronizado entre os 4 líderes de pelotão, todos devem pressionar o botão "JOGAR". <br><small><em>É sugerido formar um grupo na live com os líderes para sincronizar esta ação.</em></small></li>
-                        <li>Caso os Pelotões iniciem misturados e/ou em times separados, o time que tiver menor número de membros deve mudar de lado.</li>
-                        <li>Para a mudança é recomendado que apenas um membro crie um segundo esquadrão e envie o convite para os demais. Assim que o segundo líder conseguiu entrar no lado correto, o primeiro pode regressar ao seu pelotão e o segundo continua com o convite para os seus membros.</li>
-                        <li>Em seguida, espere que seus oponentes estejam prontos, certifique-se de que eles estejam em esquadrões de 4, então no próximo mapa o jogo começa. Servindo este primeiro mapa somente para aquecimento e distração.</li>
-                    </ol>
-                    
-                    <div class="card">
-                        <div class="card-header"><strong>IMPORTANTE:</strong></div>
-                        <div class="card-body">
-                            <h6 class="card-title"><strong>NOTA 1:</strong></h6>
-                            <p>Não se junte ao servidor procurando por ele, assim você pode acabar na equipe adversária, juntando-se ao seu time, garantindo que você estará do mesmo lado</p>
-                            <h6 class="card-title"><strong>NOTA 2:</strong></h6>
-                            <p class="card-text">Se jogadores aleatórios participarem, a melhor maneira de se livrar deles é enviando mensagens para eles ou convidando para o grupo e lhes convidando a deixarem o servidor.</p>
-                            <p class="card-text">No entanto, isso pode nem sempre ser possível, caso em que você só terá que gerar armadilhas para os jogadores aleatórios.</p>
-                            <div class="alert alert-light" role="alert">
-                                <h6 class="card-title"><strong>Já que é difícil para alguns serem legais, aqui está a mensagem que sugerimos usar:</strong></h6>
-                                <p class="card-text"><em>“Olá, você pode, por favor, deixar o servidor para que possamos usá-lo para um jogo entre clãs? Desde já fico grato pela sua compreensão"</em></p>
-                                <p class="mb-0"><small>Ser rude levará aos resultados menos favoráveis.</small></p>
-                            </div>
+            
+            <div class="py-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <h3>1 – RESTRIÇÕES DE ARMAS E ACESSÓRIOS</h3>
+                            <h4>1.1 - ARMAS:</h4>
                         </div>
                     </div>
+                    <div class="row mb-4" id="assalt">
+                        <div class="col-md-12">
+                            <h5>1.1.1 – Assalto:</h5>
+                        </div>
+                        <div class="table-responsive table-responsive-sm col-md-6">
+                            <h6>Fuzil de Assalto</h6>
+                            <table class="table table-sm table-striped table-bordered" data-resizable="true">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">Breda M1935 PG</td>
+                                        <td class="text-success">Strumgewehr 1-5</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">M1907 SF</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">StG 44</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">Ribeyrolles 1918</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive table-responsive-sm col-md-6">    
+                            <h6>Fuzil Semiautomático</h6>
+                            <table class="table table-sm table-striped table-bordered" data-resizable="true">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">Gewehr 43</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Carabina M1A1</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Turner SMLE</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Selbstlader 1916</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Gewehr 1-5</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Ag m/42</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">MAS 44</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Karabin 1938M</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">M1 Garand</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mb-4" id="medic">
+                        <div class="col-md-12">
+                            <h5>1.1.2 – Médico:</h5>
+                        </div>
+                        <div class="table-responsive table-responsive-sm col-md-6">
+                            <h6>Submetralhadora</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">Type 100</td>
+                                        <td class="text-success">STEN</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">Suomi KP/-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">MP40</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">MP28</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">EMP</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">MP34</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">M1928A1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">ZK-383</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">MAB 38</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive table-responsive-sm col-md-6">
+                            <h6>Carabina de Ferrolho</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">M28 con Tromboncino</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Carabina Commando</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Carabina Jungle</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mb-4" id="suport">
+                        <div class="col-md-12">
+                            <h5>1.1.3 – Suporte:</h5>
+                        </div>
+                        <div class="table-responsive table-responsive-sm col-md-6">
+                            <h6>Metralhadora Leve</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">M. Madsen</td>
+                                        <td class="text-success">KE7</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">LS/26</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">Bren</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">Lewis</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">FG-42</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive table-responsive-sm col-md-6">
+                            <h6>Metralhadora Média</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">S2-200</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">MG 34</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">MG 42</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">VGO</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Metralhadora M1922</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive table-responsive-sm col-md-6">
+                            <h6>Espingardas</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">12G Automática</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">M30 Drilling</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">M1987</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mb-4" id="sniper">
+                        <div class="col-md-12">
+                            <h5>1.1.4 – Batedor:</h5>
+                        </div>
+                        <div class="table-responsive table-responsive-sm col-md-6">
+                            <h6>Fuzil de Ferrolho</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">Type 99</td>
+                                        <td class="text-success">Lee-Enfield No.4 Mk I</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">Gewehr M95/30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">Krag-Jørgensen</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">Kar98k</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">Fuzil Ross Mk III</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                
+                        <div class="table-responsive table-responsive-sm col-md-6">
+                            <h6>Fuzil Auto-recarregável</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">RSC</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">SELBSTLADER 1906</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Modelo 8</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">ZH-29</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive table-responsive-sm col-md-6">
+                            <h6>Pistola Carabina</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">Carabina P08</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Carabina de Trincheira</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive table-responsive-sm col-md-6">
+                            <h6>Fuzil Antimaterial</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">Fuzil AT Boys</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Panzerbuchse 39</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <h5>1.1.5 – Secundárias:</h5>
+                            <ul>
+                                <li>Todas as Armas Secundárias são <span data-title="permitida" class="text-success">permitidas</span> para uso.</li>
+                            </ul>
+                            <h5>1.1.6 – Armas Brancas:</h5>
+                            <ul>
+                                <li>Todas as Armas Brancas são <span data-title="permitida" class="text-success">permitidas</span> para uso.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <h5>1.1.7 – Estacionárias e/ou Rebocáveis:</h5>
+                            <h6>Fixas e Estacionárias</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">FlaK 38 (Móvel/Fixa)</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">PaK 40 (Móvel/Fixa)</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">QF 6 pdr (Móvel/Fixa)</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Tripé M. P. Vickers (Fixa)</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Tripé MG34 (Fixa)</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <h4>1.2 - GADGETS:</h4>
+                            <h5>1.2.1 – Acessórios:</h5>
+                            <h6>Acessórios</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">S 35 Bouncing Betty (Mina AP</td>
+                                        <td class="text-success">Caixa de Munição</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Dinamite Adesiva</td>
+                                        <td class="text-success">Bolsa de Munição</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Spawn Beacon</td>
+                                        <td class="text-success">Caixa Médica</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Sinalizador/Pistola Flare</td>
+                                        <td class="text-success">Bolsa Médica</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Chamariz de Batedor (Sniper Decoy</td>
+                                        <td class="text-success">M49 Spotting Scope</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Tellermine (Mina AT</td>
+                                        <td class="text-success">Panzerfaust 100</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">PIAT</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">SMLE Smoke Grenade Launcher</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">Rifle de Granada</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <h4>1.3 - GRENADAS:</h4>
+                            <h5>1.3.1 - Granadas e Arremessáveis:</h5>
+                            <h6>Granadas e Arremessáveis</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">Faca de Arremesso/Throwing Knife</td>
+                                        <td class="text-success">No. 36 Frag Grenade</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">M18 Smoke Grenade</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">No. 76 Incendiary Grenade</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">No. 74 Sticky Grenade</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">Geballte Ladung</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger"></td>
+                                        <td class="text-success">No. 69 Impact Grenade</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <h4>1.4 - VEÍCULOS:</h4>
+                            <h5>1.4.1 – Tanques:</h5>
+                            <ul>
+                                <li>Todos tanques de combate são <span class="text-danger">proibidos</span> para o uso.</li>
+                            </ul> 
+                            <h5>1.4.2 – Veículos:</h5>
+                            <ul>
+                                <li>Todos veículos de combate e/ou transporte são <span class="text-danger">proibidos</span> para o uso.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <h4>1.5 - REFORÇOS:</h4>
+                            <h5>1.5.1 – Reforços de Esquadrão:</h5>
+                            <h6>Reforços do Esquadrão</h6>
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-danger" scope="col" width="50%">Proibida</th>
+                                        <th class="text-success" scope="col" width="50%">Permitida</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-danger">Artilharia Setorial</td>
+                                        <td class="text-success">Suprimento Aéreo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Foguete JB-2</td>
+                                        <td class="text-success">Barragem de Fumaça</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Foguete V-1</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-danger">Foguete Ki-147</td>
+                                        <td class="text-success"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <h4>1.6 - NOVAS ARMAS DO CURSOS DA GUERRA:</h4>
+                            <ul class="mb-0">
+                                <li>Novas armas são <span class="text-danger">proibidas</span> até que estejam disponíveis para compra por todos através de moedas do jogo.<br><small>Isso significa que até que novas armas estejam disponíveis apenas através de desafios semanais, elas não poderão ser usadas em partidas.</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="bg-light py-5">
-        <div class="container">
-            <div class="col-md-12">
-                <h3>4 - PARTIDA &amp; PONTUAÇÃO</h3>
-                <h4>4.1 - MODO DE JOGO</h4>
-                <h5>CONQUISTA DE PELOTÃO</h5>
-                <ul>
-                    <li>Inclui um total de 16 jogadores: oito jogadores por equipe, divididos em dois pelotões de quatro jogadores.</li>
-                    <li>Lute para controlar três bandeiras.</li>
-                    <li>Capturar e defender todas as bandeiras até que terminem os tickets de ressurgimento da equipe inimiga.</li>
-                </ul>
-
-                <h4>4.2 - PARTIDAS MELHOR DE TRÊS (MD3)</h4>
-                <ul>
-                    <li>Cada mapa é contado como uma partida num melhor de três (MD3). Para ganhar um mapa/partida, sua equipe deve ter o maior número de tickets restantes depois do final da partida e/ou tempo de jogo.</li>
-                    <li>Sua equipe deve ganhar 2 dos 3 mapas para vencer o confronto.</li>
-                    <li>Mesmo que sua equipe já esteja vencendo 2 dos 3 mapas em uma partida, o terceiro e último mapa/partida ainda deve ser jogado na íntegra.</li>
-                </ul>
-
-                <h4>4.3 - EMPATES & WO</h4>
-                <ul>
-                    <li>Só será considerado empate caso as duas equipes não consigam jogar no dia previamente combinado. Não conseguindo este ser reagendado.</li>
-                </ul>
-                <p><strong>NÃO é empate se:</strong></p>
-                <ul>
-                    <li>Uma das equipes estiver pronta para a partida no dia e horário combinado.</li>
-                    <li>Qualquer combinação que corresponda à um time ter a vantagem de um mapa/partida ganho à mais.</li>
-                </ul>
-
-                <h4>4.4 - CRITÉRIOS DE REINÍCIO OU VITÓRIA TÉCNICA</h4>
-                <ul>
-                    <li class="mb-3">
-                        <p class="mb-0"><strong>De 160 a 100 - Início da Partida</strong></p>
-                        <p class="mb-0">Diferença dos tickets restantes maior e/ou menor que 50%.</p>
-                        <p class="mb-0 text-info"><em>Reinício do 0 da partida no próximo mapa.</em></p>
-                    </li>
-                    <li class="mb-3">
-                        <p class="mb-0"><strong>De 99 a 50 - Meio da Partida</strong></p>
-                        <p class="mb-0">Diferença dos tickets restantes maior e/ou menor que 50%.</p>
-                        <p class="mb-0 text-info"><em>Reinício do 0 da partida no próximo mapa.</em></p>
-                    </li>
-                    <li class="mb-3">
-                        <p class="mb-0"><strong>De 49 a 0 - Fim da Partida</strong></p>
-                        <p class="mb-0">Diferença dos tickets restantes maior que 50%.</p>
-                        <p class="mb-0 text-info"><em>Vitória para o time ganhador.</em></p>
-                        <p class="mb-0">Diferença dos tickets restantes menor que 50%.</p>
-                        <p class="mb-0 text-info"><em>Subitrai-se a diferênça da partida no próximo mapa.</em></p>
-                    </li>
-                </ul>
-                <div class="alert alert-light">
-                    <p class="mb-0"><small><strong>Obs.:</strong> <em>Esta regra só é valida caso entre players aleatórios na partida. Caso contrário o jogo continua normal mesmo que um clã esteja com players a menos.</em></small></p>
-                </div>
-                
-
-                <h4>4.5 - PONTUAÇÃO</h4>
-                <ul>
-                    <li>Ganhar o confronto = 3 pontos;</li>
-                    <li>Empatar o confronto = 0 ponto;</li>
-                    <li>Perder o confronto = 0 pontos.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="py-5">
-        <div class="container">
-            <div class="col-md-12">
-                <h3>5 - JOGOS</h3>
-                <h4>5.1 - ORGANIZAÇÃO</h4>
-                <ul>
-                    <li>Cada equipe deve comunicar sua disponibilidade com o seu oponente.</li>
-                    <li>Quando as duas equipes concordarem com a data e a hora em que ambas jogarão, confirme os detalhes de sua partida.</li>
-                </ul>
-                
-                <div class="alert alert-light">
-                    <p class="mb-0"><small><strong>Nota:</strong> <em>As regras acima devem ser informadas à organização com pelo menos 48 horas de antecedência para que seja preparada a partida.</em></small></p>
-                </div>
-                
-                <h4>5.2 - DIA DA PARTIDA</h4>
-                <ul>
-                    <li>As equipes devem estar prontas 30 minutos antes do início do confronto, para iniciar a verificação dos players junto à comissão de ética.</li>
-                    <li>As equipes têm um máximo de 15 minutos após o horário programado para que todos os seus jogadores sejam verificados e validados pelos fiscais da partida.</li>
-                </ul>
-                <h4>5.3 - ACIDENTES DO SERVIDOR</h4>
-                <h5>No caso de um servidor cair/travar durante uma rodada, use o seguinte procedimento:</h5>
-                
-                <ul>
-                    <li>Se o servidor travar DURANTE a primeira partida, a rodada deve ser totalmente repetida.</li>
-                    <li>Se o servidor travar DURANTE o segundo ou terceiro mapa, as equipes serão obrigadas a reiniciar o confronto a partir do mapa onde houve a falha e continuar a contagem das partidas anteriores.</li>
-                </ul>
-                <h4>5.4 - ACIDENTES DO JOGADOR</h4>
-                <h5>No caso de um jogador cair/travar durante uma rodada, por favor use o seguinte procedimento:</h5>
-                
-                <ul>
-                    <li>Se um jogador se desconectar antes do início da partida, a partida não deverá ser iniciada até que o membro consiga restabelecer a conexão.</li>
-                    <li>Se um jogador se desconectar enquanto o mapa estiver em jogo, o jogador deve voltar ao mapa o mais rápido possível.</li>
-                    <li>Caso entrem players aleatórios, segue-se a regra 4.4</li>
-                </ul>
-                <h4>5.5 - CONTESTAÇÃO</h4>
-                <ul>
-                    <li>Se o time perdedor quiser contestar o resultado, ele deve fazê-lo dentro de 24 horas após o término da partida.</li>
-                    <li>Qualquer contestação de resultado deve ser feita com provas (prints de tela e gravações) oficiais do Xbox Live. <em>"Fotos da TV não serão considerados"</em>.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="bg-light py-5">
-        <div class="container">
-            <div class="col-md-12">
-                <h3>6 - INSCRIÇÕES</h3>
-                <h4>6.1 - EQUIPES</h4>
-                <ul>
-                    <li>Um único líder/responsável deverá fazer a inscrição da equipe, ficando este responsável por votar todos os itens da Liga X e transmitir as decisões aos membros da sua equipe. </li>
-                    <li>Cada equipe deverá inscrever um número mínimo de 10 e o máximo de 16 jogadores;</li>
-                    <li>Será aceita somente a line de 8 jogadores por equipe, ficando o restante dos players escalados como reservas.</li>
-                </ul>
-                <h4>6.2 - MEMBROS</h4>
-                <ul>
-                    <li>A ficha de inscrição deverá ser preenchida por cada player/jogador, ficando ele responsável pela sua transmissão e ciente das penalidades aplicadas a ele e sua equipe;</li>
-                    <li>A ficha deve ser preenchida na integra com todos os dados de cada membro.</li>
-                    <li>Cada player inscrito estará de acordo com o TERMO DE CESSÃO DE USO DE IMAGEM (TCUI) anexado a ficha de inscrição. </li>
-                    <li>Ao preencher a ficha o player estará ciente e de acordo com todas as regras descritas neste documento.</li>
-                    <li>Só serão aceitos nas partidas membros previamente cadastrados.</li>
-                    <li>A Organização do Evento (LIGA X) se isenta de toda e qualquer responsabilidade das imagens apresentadas nas câmeras e vídeo-chamadas dos membros participantes do evento.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="py-5">
-        <div class="container">
-            <div class="col-md-12">
-                <h3>7 - FISCALIZAÇÃO</h3>
-                <h4>7.1 – ACOMPANHAMENTO AO VIVO (LIVE)</h4>
-                <ul>
-                    <li>Será feita pela comissão de ética do campeonato em tempo real;</li>
-                    <li>Cada membro é responsável por sua transmissão, bem como de tudo que será exibido pela sua câmera.</li>
-                    <li>Cada equipe é responsável por indicar um fiscal para acompanhar a equipe adversária. <small><em>"Podendo ser player das equipes inscritas no evento e/ou jogadores da próprie equipe que não irão participar do confronto."</em></small></li>
-                    <li>A organização do evento pode solicitar players para serem transmitidos e acompanhados via vídeo-chamada nas transmissões oficiais.</li>
-                </ul>
-                <h4>7.2 - REALTIME / HANDCAM / CONFERÊNCIA</h4>
-                <ul>
-                    <li>Todos os players/jogadores são obrigados a fazer a videoconferência com a comissão de ética durante toda a partida; </li>
-                    <li>Todos os membros devem transmitir ao vivo sua handcam;</li>
-                    <li>Serão aceitos somente membros de clãs participantes da liga para acompanhar a fiscalização de cada confronto, garantindo a imparcialidade.</li>
-                    <li>Antes do início do confronto é feita toda a verificação de cada player;</li>
-                    <li>O player deverá mostrar todo console, parte da frente, laterais e de trás (conferência das portas USB);</li>
-                    <li>Se houver algum fone ou controle que só funcione conectado, deverá mostrar ambos com ênfase, no caso do controle desde a saída do USB até a conexão no joystick;</li>
-                    <li>Após o procedimento de verificação, e ainda ao vivo, posicionar a câmera para uma posição que filme a TV/Monitor, o console e as mãos jogando, podendo este ser utilizado como uma credencial;</li>
-                    <li>Se a videoconferência cair no meio da partida, o jogador deverá parar de jogar imediatamente e reestabelecer a conexão. Quando a transmissão voltar, o jogador terá obrigatoriamente que fazer a toda verificação inicial novamente, mostrando o console frente e atrás dando ênfase nas portas USB.</li>
-                </ul>
-                <h4>7.3 - CONTROLES</h4>
-                <h5>Serão aceitos os controles:</h5>
-                <ul>
-                    <li>Original / Edições Especiais (Microsoft);</li>
-                    <li>Elite Dualshock / Elite Series 2 (Microsoft);</li>
-                    <li>Scuf Adaptado (Stelf/GG Controles/Evzen/Dash);</li>
-                    <li>Wolverine Ultimate (Razer);</li>
-                </ul>                
-                <div class="alert alert-light">
-                    <p class="mb-0"><small><strong>Obs.:</strong> <em>É vetado o uso de Cabo USB caso o controle possua a opção de pilhas e/ou baterias.</em></small></p>
+            <div class="bg-light py-5">
+                <div class="container">    
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <h3>2 - MAPAS</h3>
+                            <div class="alert alert-warning" role="alert">
+                                <p class="mb-0"><small>Estas informações sofrerão alterações com o lançamento dos servidores privados "RFP".</small></p>
+                            </div>
+                            <h4>2.1 - VALÍDOS:</h4>
+                            <ul>
+                                <li>Arras</li>
+                                <li>Roterdã</li>
+                                <li>Hamada</li>
+                                <li>Fjell 652</li>
+                                <li>Al Sundan</li>
+                                <li>Devastação</li>
+                                <li>Narvik</li>
+                                <li>Mercúrio</li>
+                                <li>Marita</li>
+                                <li>Lofoten</li>
+                                <li>Provença</li>
+                                <li>Operação Subterrânea</li>
+                            </ul>                    
+                            <h4>1.2 - NÃO JOGÁVEIS:</h4>
+                            <ul>
+                                <li>Iwo Jima</li>
+                                <li>Tormenta do Pacífico</li>
+                            </ul>                    
+                            <div class="card">
+                                    <div class="card-header"><strong>IMPORTANTE:</strong></div>
+                                    <div class="card-body">
+                                        <p class="card-text">Todos os mapas válidos estarão disponíveis para o confronto. Ficando o primeiro mapa para organização das equipes e aquecimento e o próximo iniciará o confronto.<br>
+                                            Mapas novos lançados durante o evento serão analisados e discutidos entre a organização e os líderes das equipes.</p>
+                                        <blockquote class="blockquote">
+                                            <p class="mb-0">É estritamente <span class="text-danger">proibido</span> o uso de <abbr title="É a atividade em que uma pessoa encontra e explora falhas do jogo">gliches</abbr> nos mapas.</p>
+                                            <footer class="blockquote-footer">Usar falha do jogo ou mapa para tirar proveito sobre seu adversário.</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="bg-light py-5">
-        <div class="container">
-            <div class="col-md-12">
-                <h3>8 - PENALIDADES</h3>
-                <ul>
-                    <li>Se uma equipe violar uma restrição de Armas, Gadgets, Veículos e/ou Reforços. O mapa/partida em que o item foi usado será perdido e não o confronto na integra;</li>
-                    <li>Se for comprovado uso de outro tipo de controle e/ou assessórios que não são permitidos nas regras, controle turbo ou periféricos a equipe será desclassificada e removida do campeonato e a vitória será data de imediato a equipe adversária; </li>
-                    <li>Se o seu oponente usou algum dos itens proibidos em uma partida, faça uma captura de tela da mensagem de morte, mostrando seu inimigo usando-a. E encaminhe para a equipe de ética e fiscais da partida, para avaliarem e aplicar a punição.</li>
-                    <li>As equipes serão obrigadas a relatar e fornecer provas de qualquer infração de regra no final do mapa/partida em que a infração ocorreu. Não podendo este usar a transmissão oficial como prova e não fazer isso pode anular qualquer penalidade para a equipe adversária.</li>
-                    <li>O membro que for pego tentando burlar as regras pode sofrer consequências graves, como proibição de participar de eventos futuros da Organização. Podendo se estender também ao seu esquadrão (Clã).</li>
-                    <li>Todos os players, jogadores, líderes, responsáveis, equipes não podem aborrecer, atacar, atormentar, denegrir, difamar, fraudar, importunar, insultar a administração, comissão de ética e/ou a Liga X.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="py-5">
-        <div class="container">
-            <div class="col-md-12">
-                <h3>REFERÊNCIAS:</h3>
-                <ul>
-                    <li><a href="https://league.esport-battlefield.com/" target="_blank">https://league.esport-battlefield.com/</a></li>
-                    <li><a href="https://battlefieldcommunityleague.com/" target="_blank">https://battlefieldcommunityleague.com/</a></li>
-                    <li><a href="https://web.facebook.com/CBBFV/" target="_blank">https://web.facebook.com/CBBFV/</a></li>
-                    <li><a href="https://www.facebook.com/LigaFairPlayBattlefield/" target="_blank">https://www.facebook.com/LigaFairPlayBattlefield/</a></li>
-                </ul>
-                <div class="alert alert-light">
-                    <p class="mb-0"><small><strong>Obs.:</strong> <em>As Regras da <strong>Liga X</strong> foram criadas com base nas referências acima e ajustes feitos pelos lideres, cordenadores e apoiadores. Sempre votados e discutidos com antecedência pelas equipes participantes.</em></small></p>
+            <div class="py-5">
+                <div class="container"> 
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <h3>3 - CONFIGURAÇÕES DO SERVIDOR</h3>
+                            <div class="alert alert-warning" role="alert">
+                                <p class="mb-0"><small>Estas informações sofrerão alterações com o lançamento dos servidores privados "RFP".</small></p>
+                            </div>
+                            <h4>INSTRUÇÕES: </h4>
+                            <h5>Como usar um servidor público para jogo competitivo:</h5>
+                            <ol>
+                                <li>Os líderes de Pelotão devem criar e formar suas equipes. Clicando com o botão “RT” no menu do Battlefield. Os demais membros devem aceitar o convite e aguardar.</li>
+                                <li>No menu principal escolha a opção "JOGAR", logo escolha a opção "MULTIPLAYER", neste, escolha a opção "CONQUISTA DE PELOTÃO" no Menu lateral direito.</li>
+                                <li>Em um movimento sincronizado entre os 4 líderes de pelotão, todos devem pressionar o botão "JOGAR". <br><small><em>É sugerido formar um grupo na live com os líderes para sincronizar esta ação.</em></small></li>
+                                <li>Caso os Pelotões iniciem misturados e/ou em times separados, o time que tiver menor número de membros deve mudar de lado.</li>
+                                <li>Para a mudança é recomendado que apenas um membro crie um segundo esquadrão e envie o convite para os demais. Assim que o segundo líder conseguiu entrar no lado correto, o primeiro pode regressar ao seu pelotão e o segundo continua com o convite para os seus membros.</li>
+                                <li>Em seguida, espere que seus oponentes estejam prontos, certifique-se de que eles estejam em esquadrões de 4, então no próximo mapa o jogo começa. Servindo este primeiro mapa somente para aquecimento e distração.</li>
+                            </ol>
+                            
+                            <div class="card">
+                                <div class="card-header"><strong>IMPORTANTE:</strong></div>
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>NOTA 1:</strong></h6>
+                                    <p>Não se junte ao servidor procurando por ele, assim você pode acabar na equipe adversária, juntando-se ao seu time, garantindo que você estará do mesmo lado</p>
+                                    <h6 class="card-title"><strong>NOTA 2:</strong></h6>
+                                    <p class="card-text">Se jogadores aleatórios participarem, a melhor maneira de se livrar deles é enviando mensagens para eles ou convidando para o grupo e lhes convidando a deixarem o servidor.</p>
+                                    <p class="card-text">No entanto, isso pode nem sempre ser possível, caso em que você só terá que gerar armadilhas para os jogadores aleatórios.</p>
+                                    <div class="alert alert-light" role="alert">
+                                        <h6 class="card-title"><strong>Já que é difícil para alguns serem legais, aqui está a mensagem que sugerimos usar:</strong></h6>
+                                        <p class="card-text"><em>“Olá, você pode, por favor, deixar o servidor para que possamos usá-lo para um jogo entre clãs? Desde já fico grato pela sua compreensão"</em></p>
+                                        <p class="mb-0"><small>Ser rude levará aos resultados menos favoráveis.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="bg-light py-5">
-        <div class="container">
-            <div class="col-md-12">
-                <h3>LICENÇAS DEU USO</h3>
-                <p class="monospace">Copyright © LIGA X. Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled "GNU Free Documentation License".</p>
-            </div>
-        </div>
-    </div>
-    <div class="py-5">
-        <div class="container">
-            <div class="col-md-12">
-                <h3>AGRADECIMENTOS:</h3>
-                <p>Agradecimento a todos os clãs participantes da primeira Liga X, que ajudaram na confecção das regras e acreditam na possibilidade de um jogo limpo e justo entre os players, visando a transparência e união entre a comunidade Battlefield TM.</p>
-                <ul>
-                    <li>
-                        <strong>[LOBO] Alcateia Alpha</strong> - <em>Ronaldo - Jake Delt4</em>
-                    </li>
-                    <li>
-                        <strong>[DIRE] Diretoria</strong> - <em>Rafael - BOA MORTE FPS</em>
-                    </li>
-                    <li>
-                        <strong>[ITA] Infantaria de Táticas Avançadas</strong> - <em>João Victor - Ghost RaMmsfan</em>
-                    </li>
-                    <li>
-                        <strong>[LOBO²] Alcateia Alpha</strong> - <em>Anderson - SEG LINE</em>
-                    </li>
-                    <li>
-                        <strong>[CTM] CONCHETUMARE</strong> - <em>Víctor - Deathman cl</em>
-                    </li>
-                    <li>
-                        <strong>[OPBR] Ordem e Progresso Brasila</strong> - <em>Daniel - CARDOSO DNL</em>
-                    </li>
-                    <li>
-                        <strong>[VMP] VAMPIROS</strong> - <em>Fernando - Feeeer6</em>
-                    </li>
-                    <li>
-                        <strong>[WARG] Warriors Arg</strong> - <em>Axel - WARG Braga</em>
-                    </li>
-                </ul>
+            <div class="bg-light py-5">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3>4 - PARTIDA &amp; PONTUAÇÃO</h3>
+                        <h4>4.1 - MODO DE JOGO</h4>
+                        <h5>CONQUISTA DE PELOTÃO</h5>
+                        <ul>
+                            <li>Inclui um total de 16 jogadores: oito jogadores por equipe, divididos em dois pelotões de quatro jogadores.</li>
+                            <li>Lute para controlar três bandeiras.</li>
+                            <li>Capturar e defender todas as bandeiras até que terminem os tickets de ressurgimento da equipe inimiga.</li>
+                        </ul>
 
-                <ul>
-                    <li>
-                        <strong>[FURY] Fury of the Killers</strong> - <em>Herson - EvilSchluters</em>
-                    </li>
-                    <li>
-                        <strong>[AS] Alpha Squad</strong> - <em>Dieison - Dino2018Machado</em>
-                    </li>
-                    <li>
-                        <strong>[MALs] MALs</strong> - <em>Brendon - MALs SanTs</em>
-                    </li>
-                    <li>
-                        <strong>[BF] Brazilian Force</strong> - <em>Ananda - Nanda Roots</em>
-                    </li>
-                    <li>
-                        <strong>[GR8] Great</strong> - <em>Daniel - GR8 Hir0shi </em>
-                    </li>
-                    <li>
-                        <strong></strong> - <em></em>
-                    </li>
-                </ul>
+                        <h4>4.2 - PARTIDAS MELHOR DE TRÊS (MD3)</h4>
+                        <ul>
+                            <li>Cada mapa é contado como uma partida num melhor de três (MD3). Para ganhar um mapa/partida, sua equipe deve ter o maior número de tickets restantes depois do final da partida e/ou tempo de jogo.</li>
+                            <li>Sua equipe deve ganhar 2 dos 3 mapas para vencer o confronto.</li>
+                            <li>Mesmo que sua equipe já esteja vencendo 2 dos 3 mapas em uma partida, o terceiro e último mapa/partida ainda deve ser jogado na íntegra.</li>
+                        </ul>
+
+                        <h4>4.3 - EMPATES & WO</h4>
+                        <ul>
+                            <li>Só será considerado empate caso as duas equipes não consigam jogar no dia previamente combinado. Não conseguindo este ser reagendado.</li>
+                        </ul>
+                        <p><strong>NÃO é empate se:</strong></p>
+                        <ul>
+                            <li>Uma das equipes estiver pronta para a partida no dia e horário combinado.</li>
+                            <li>Qualquer combinação que corresponda à um time ter a vantagem de um mapa/partida ganho à mais.</li>
+                        </ul>
+
+                        <h4>4.4 - CRITÉRIOS DE REINÍCIO OU VITÓRIA TÉCNICA</h4>
+                        <ul>
+                            <li class="mb-3">
+                                <p class="mb-0"><strong>De 160 a 100 - Início da Partida</strong></p>
+                                <p class="mb-0">Diferença dos tickets restantes maior e/ou menor que 50%.</p>
+                                <p class="mb-0 text-info"><em>Reinício do 0 da partida no próximo mapa.</em></p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="mb-0"><strong>De 99 a 50 - Meio da Partida</strong></p>
+                                <p class="mb-0">Diferença dos tickets restantes maior e/ou menor que 50%.</p>
+                                <p class="mb-0 text-info"><em>Reinício do 0 da partida no próximo mapa.</em></p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="mb-0"><strong>De 49 a 0 - Fim da Partida</strong></p>
+                                <p class="mb-0">Diferença dos tickets restantes maior que 50%.</p>
+                                <p class="mb-0 text-info"><em>Vitória para o time ganhador.</em></p>
+                                <p class="mb-0">Diferença dos tickets restantes menor que 50%.</p>
+                                <p class="mb-0 text-info"><em>Subitrai-se a diferênça da partida no próximo mapa.</em></p>
+                            </li>
+                        </ul>
+                        <div class="alert alert-light">
+                            <p class="mb-0"><small><strong>Obs.:</strong> <em>Esta regra só é valida caso entre players aleatórios na partida. Caso contrário o jogo continua normal mesmo que um clã esteja com players a menos.</em></small></p>
+                        </div>
+                        
+
+                        <h4>4.5 - PONTUAÇÃO</h4>
+                        <ul>
+                            <li>Ganhar o confronto = 3 pontos;</li>
+                            <li>Empatar o confronto = 0 ponto;</li>
+                            <li>Perder o confronto = 0 pontos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3>5 - JOGOS</h3>
+                        <h4>5.1 - ORGANIZAÇÃO</h4>
+                        <ul>
+                            <li>Cada equipe deve comunicar sua disponibilidade com o seu oponente.</li>
+                            <li>Quando as duas equipes concordarem com a data e a hora em que ambas jogarão, confirme os detalhes de sua partida.</li>
+                        </ul>
+                        
+                        <div class="alert alert-light">
+                            <p class="mb-0"><small><strong>Nota:</strong> <em>As regras acima devem ser informadas à organização com pelo menos 48 horas de antecedência para que seja preparada a partida.</em></small></p>
+                        </div>
+                        
+                        <h4>5.2 - DIA DA PARTIDA</h4>
+                        <ul>
+                            <li>As equipes devem estar prontas 30 minutos antes do início do confronto, para iniciar a verificação dos players junto à comissão de ética.</li>
+                            <li>As equipes têm um máximo de 15 minutos após o horário programado para que todos os seus jogadores sejam verificados e validados pelos fiscais da partida.</li>
+                        </ul>
+                        <h4>5.3 - ACIDENTES DO SERVIDOR</h4>
+                        <h5>No caso de um servidor cair/travar durante uma rodada, use o seguinte procedimento:</h5>
+                        
+                        <ul>
+                            <li>Se o servidor travar DURANTE a primeira partida, a rodada deve ser totalmente repetida.</li>
+                            <li>Se o servidor travar DURANTE o segundo ou terceiro mapa, as equipes serão obrigadas a reiniciar o confronto a partir do mapa onde houve a falha e continuar a contagem das partidas anteriores.</li>
+                        </ul>
+                        <h4>5.4 - ACIDENTES DO JOGADOR</h4>
+                        <h5>No caso de um jogador cair/travar durante uma rodada, por favor use o seguinte procedimento:</h5>
+                        
+                        <ul>
+                            <li>Se um jogador se desconectar antes do início da partida, a partida não deverá ser iniciada até que o membro consiga restabelecer a conexão.</li>
+                            <li>Se um jogador se desconectar enquanto o mapa estiver em jogo, o jogador deve voltar ao mapa o mais rápido possível.</li>
+                            <li>Caso entrem players aleatórios, segue-se a regra 4.4</li>
+                        </ul>
+                        <h4>5.5 - CONTESTAÇÃO</h4>
+                        <ul>
+                            <li>Se o time perdedor quiser contestar o resultado, ele deve fazê-lo dentro de 24 horas após o término da partida.</li>
+                            <li>Qualquer contestação de resultado deve ser feita com provas (prints de tela e gravações) oficiais do Xbox Live. <em>"Fotos da TV não serão considerados"</em>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light py-5">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3>6 - INSCRIÇÕES</h3>
+                        <h4>6.1 - EQUIPES</h4>
+                        <ul>
+                            <li>Um único líder/responsável deverá fazer a inscrição da equipe, ficando este responsável por votar todos os itens da Liga X e transmitir as decisões aos membros da sua equipe. </li>
+                            <li>Cada equipe deverá inscrever um número mínimo de 10 e o máximo de 16 jogadores;</li>
+                            <li>Será aceita somente a line de 8 jogadores por equipe, ficando o restante dos players escalados como reservas.</li>
+                        </ul>
+                        <h4>6.2 - MEMBROS</h4>
+                        <ul>
+                            <li>A ficha de inscrição deverá ser preenchida por cada player/jogador, ficando ele responsável pela sua transmissão e ciente das penalidades aplicadas a ele e sua equipe;</li>
+                            <li>A ficha deve ser preenchida na integra com todos os dados de cada membro.</li>
+                            <li>Cada player inscrito estará de acordo com o TERMO DE CESSÃO DE USO DE IMAGEM (TCUI) anexado a ficha de inscrição. </li>
+                            <li>Ao preencher a ficha o player estará ciente e de acordo com todas as regras descritas neste documento.</li>
+                            <li>Só serão aceitos nas partidas membros previamente cadastrados.</li>
+                            <li>A Organização do Evento (LIGA X) se isenta de toda e qualquer responsabilidade das imagens apresentadas nas câmeras e vídeo-chamadas dos membros participantes do evento.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3>7 - FISCALIZAÇÃO</h3>
+                        <h4>7.1 – ACOMPANHAMENTO AO VIVO (LIVE)</h4>
+                        <ul>
+                            <li>Será feita pela comissão de ética do campeonato em tempo real;</li>
+                            <li>Cada membro é responsável por sua transmissão, bem como de tudo que será exibido pela sua câmera.</li>
+                            <li>Cada equipe é responsável por indicar um fiscal para acompanhar a equipe adversária. <small><em>"Podendo ser player das equipes inscritas no evento e/ou jogadores da próprie equipe que não irão participar do confronto."</em></small></li>
+                            <li>A organização do evento pode solicitar players para serem transmitidos e acompanhados via vídeo-chamada nas transmissões oficiais.</li>
+                        </ul>
+                        <h4>7.2 - REALTIME / HANDCAM / CONFERÊNCIA</h4>
+                        <ul>
+                            <li>Todos os players/jogadores são obrigados a fazer a videoconferência com a comissão de ética durante toda a partida; </li>
+                            <li>Todos os membros devem transmitir ao vivo sua handcam;</li>
+                            <li>Serão aceitos somente membros de clãs participantes da liga para acompanhar a fiscalização de cada confronto, garantindo a imparcialidade.</li>
+                            <li>Antes do início do confronto é feita toda a verificação de cada player;</li>
+                            <li>O player deverá mostrar todo console, parte da frente, laterais e de trás (conferência das portas USB);</li>
+                            <li>Se houver algum fone ou controle que só funcione conectado, deverá mostrar ambos com ênfase, no caso do controle desde a saída do USB até a conexão no joystick;</li>
+                            <li>Após o procedimento de verificação, e ainda ao vivo, posicionar a câmera para uma posição que filme a TV/Monitor, o console e as mãos jogando, podendo este ser utilizado como uma credencial;</li>
+                            <li>Se a videoconferência cair no meio da partida, o jogador deverá parar de jogar imediatamente e reestabelecer a conexão. Quando a transmissão voltar, o jogador terá obrigatoriamente que fazer a toda verificação inicial novamente, mostrando o console frente e atrás dando ênfase nas portas USB.</li>
+                        </ul>
+                        <h4>7.3 - CONTROLES</h4>
+                        <h5>Serão aceitos os controles:</h5>
+                        <ul>
+                            <li>Original / Edições Especiais (Microsoft);</li>
+                            <li>Elite Dualshock / Elite Series 2 (Microsoft);</li>
+                            <li>Scuf Adaptado (Stelf/GG Controles/Evzen/Dash);</li>
+                            <li>Wolverine Ultimate (Razer);</li>
+                        </ul>                
+                        <div class="alert alert-light">
+                            <p class="mb-0"><small><strong>Obs.:</strong> <em>É vetado o uso de Cabo USB caso o controle possua a opção de pilhas e/ou baterias.</em></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light py-5">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3>8 - PENALIDADES</h3>
+                        <ul>
+                            <li>Se uma equipe violar uma restrição de Armas, Gadgets, Veículos e/ou Reforços. O mapa/partida em que o item foi usado será perdido e não o confronto na integra;</li>
+                            <li>Se for comprovado uso de outro tipo de controle e/ou assessórios que não são permitidos nas regras, controle turbo ou periféricos a equipe será desclassificada e removida do campeonato e a vitória será data de imediato a equipe adversária; </li>
+                            <li>Se o seu oponente usou algum dos itens proibidos em uma partida, faça uma captura de tela da mensagem de morte, mostrando seu inimigo usando-a. E encaminhe para a equipe de ética e fiscais da partida, para avaliarem e aplicar a punição.</li>
+                            <li>As equipes serão obrigadas a relatar e fornecer provas de qualquer infração de regra no final do mapa/partida em que a infração ocorreu. Não podendo este usar a transmissão oficial como prova e não fazer isso pode anular qualquer penalidade para a equipe adversária.</li>
+                            <li>O membro que for pego tentando burlar as regras pode sofrer consequências graves, como proibição de participar de eventos futuros da Organização. Podendo se estender também ao seu esquadrão (Clã).</li>
+                            <li>Todos os players, jogadores, líderes, responsáveis, equipes não podem aborrecer, atacar, atormentar, denegrir, difamar, fraudar, importunar, insultar a administração, comissão de ética e/ou a Liga X.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3>REFERÊNCIAS:</h3>
+                        <ul>
+                            <li><a href="https://league.esport-battlefield.com/" target="_blank">https://league.esport-battlefield.com/</a></li>
+                            <li><a href="https://battlefieldcommunityleague.com/" target="_blank">https://battlefieldcommunityleague.com/</a></li>
+                            <li><a href="https://web.facebook.com/CBBFV/" target="_blank">https://web.facebook.com/CBBFV/</a></li>
+                            <li><a href="https://www.facebook.com/LigaFairPlayBattlefield/" target="_blank">https://www.facebook.com/LigaFairPlayBattlefield/</a></li>
+                        </ul>
+                        <div class="alert alert-light">
+                            <p class="mb-0"><small><strong>Obs.:</strong> <em>As Regras da <strong>Liga X</strong> foram criadas com base nas referências acima e ajustes feitos pelos lideres, cordenadores e apoiadores. Sempre votados e discutidos com antecedência pelas equipes participantes.</em></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light py-5">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3>LICENÇAS DEU USO</h3>
+                        <p class="monospace">Copyright © LIGA X. Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled "GNU Free Documentation License".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3>AGRADECIMENTOS:</h3>
+                        <p>Agradecimento a todos os clãs participantes da primeira Liga X, que ajudaram na confecção das regras e acreditam na possibilidade de um jogo limpo e justo entre os players, visando a transparência e união entre a comunidade Battlefield TM.</p>
+                        <ul>
+                            <li>
+                                <strong>[LOBO] Alcateia Alpha</strong> - <em>Ronaldo - Jake Delt4</em>
+                            </li>
+                            <li>
+                                <strong>[DIRE] Diretoria</strong> - <em>Rafael - BOA MORTE FPS</em>
+                            </li>
+                            <li>
+                                <strong>[ITA] Infantaria de Táticas Avançadas</strong> - <em>João Victor - Ghost RaMmsfan</em>
+                            </li>
+                            <li>
+                                <strong>[LOBO²] Alcateia Alpha</strong> - <em>Anderson - SEG LINE</em>
+                            </li>
+                            <li>
+                                <strong>[CTM] CONCHETUMARE</strong> - <em>Víctor - Deathman cl</em>
+                            </li>
+                            <li>
+                                <strong>[OPBR] Ordem e Progresso Brasila</strong> - <em>Daniel - CARDOSO DNL</em>
+                            </li>
+                            <li>
+                                <strong>[VMP] VAMPIROS</strong> - <em>Fernando - Feeeer6</em>
+                            </li>
+                            <li>
+                                <strong>[WARG] Warriors Arg</strong> - <em>Axel - WARG Braga</em>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <strong>[FURY] Fury of the Killers</strong> - <em>Herson - EvilSchluters</em>
+                            </li>
+                            <li>
+                                <strong>[AS] Alpha Squad</strong> - <em>Dieison - Dino2018Machado</em>
+                            </li>
+                            <li>
+                                <strong>[MALs] MALs</strong> - <em>Brendon - MALs SanTs</em>
+                            </li>
+                            <li>
+                                <strong>[BF] Brazilian Force</strong> - <em>Ananda - Nanda Roots</em>
+                            </li>
+                            <li>
+                                <strong>[GR8] Great</strong> - <em>Daniel - GR8 Hir0shi </em>
+                            </li>
+                            <li>
+                                <strong></strong> - <em></em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                    <i class="fas fa-align-left"></i>
+                    <span>Sumário</span>
+                </button>
             </div>
         </div>
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded goTo" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
     </div>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>    
+
+    <script>
+        $(document).ready(function () {
+            window.scrollTo(0,1);
+            $('#sidebarCollapse').on('click', function () {
+                // open or close navbar
+                $('#sidebar').toggleClass('active');
+                // close dropdowns
+                $('.collapse.in').toggleClass('in');
+                // and also adjust aria-expanded attributes we use for the open/closed arrows
+                // in our CSS
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+
+            // Scroll to top button appear
+            $(document).on('scroll', function() {
+                var scrollDistance = $(this).scrollTop();
+                if (scrollDistance > 100) {
+                    $('.scroll-to-top').fadeIn();
+                } else {
+                    $('.scroll-to-top').fadeOut();
+                }
+            });
+
+            $(document).on('click', '.goTo[href*="#"]:not([href="#"])', function(){
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    amount = ($(this).data('margin')?$(this).data('margin'):30)
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top-amount
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+            
+        });
+    </script>
+    
 </body>
 </html>
