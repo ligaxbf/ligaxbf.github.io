@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+    
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -705,18 +707,22 @@
                             <ul>
                                 <li>Iwo Jima</li>
                                 <li>Tormenta do Pacífico</li>
-                            </ul>                    
+                            </ul>
+                            <div class="my-4">
+                                <a class="btn btn-dark" href="#mapsModal" data-toggle="modal" data-target="#mapsModal">Escolha de Mapas</a>
+                            </div>
+
                             <div class="card">
-                                    <div class="card-header"><strong>IMPORTANTE:</strong></div>
-                                    <div class="card-body">
-                                        <p class="card-text">Todos os mapas válidos estarão disponíveis para o confronto. Ficando o primeiro mapa para organização das equipes e aquecimento e o próximo iniciará o confronto.<br>
-                                            Mapas novos lançados durante o evento serão analisados e discutidos entre a organização e os líderes das equipes.</p>
-                                        <blockquote class="blockquote">
-                                            <p class="mb-0">É estritamente <span class="text-danger">proibido</span> o uso de <abbr title="É a atividade em que uma pessoa encontra e explora falhas do jogo">gliches</abbr> nos mapas.</p>
-                                            <footer class="blockquote-footer">Usar falha do jogo ou mapa para tirar proveito sobre seu adversário.</footer>
-                                        </blockquote>
-                                    </div>
+                                <div class="card-header"><strong>IMPORTANTE:</strong></div>
+                                <div class="card-body">
+                                    <p class="card-text">Todos os mapas válidos estarão disponíveis para o confronto. Ficando o primeiro mapa para organização das equipes e aquecimento e o próximo iniciará o confronto.<br>
+                                        Mapas novos lançados durante o evento serão analisados e discutidos entre a organização e os líderes das equipes.</p>
+                                    <blockquote class="blockquote">
+                                        <p class="mb-0">É estritamente <span class="text-danger">proibido</span> o uso de <abbr title="É a atividade em que uma pessoa encontra e explora falhas do jogo">gliches</abbr> nos mapas.</p>
+                                        <footer class="blockquote-footer">Usar falha do jogo ou mapa para tirar proveito sobre seu adversário.</footer>
+                                    </blockquote>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1025,6 +1031,60 @@
         </a>
 
     </div>
+
+    <!-- Logout Modal-->
+	<div class="modal fade" id="mapsModal" tabindex="-1" role="dialog" aria-labelledby="mapsModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="mapsModalLabel">Sortear mapas para o Confronto?</h5>
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+                    <div class="col-md-12 mb-2">
+                        <p>Quantos mapas serão sorteados:</p>
+                        <div class="numbers">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                        </div>
+                        <div class="slider-wrapper slider-strips">
+                            <input class="input-range" data-slider-id='ex1Slider' type="text" data-slider-min="1" data-slider-max="5" data-slider-step="1"  data-slider-split="true"  data-slider-value="1" />
+                        </div>
+                    </div>
+                    <p>Selecione os Mapas para sortear:</p>
+                    <div class="col-md-12 list-maps">
+                        <div class="custom-control custom-checkbox d-none">
+                            <input type="checkbox" class="custom-control-input" id="0" name="0">
+                            <label class="custom-control-label" for="0"></label>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-warning alert-dismissible fade show d-none my-2" role="alert">
+                        <p class="mb-0"></p>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+				</div>
+				<div class="modal-footer">
+                    <div class="escolha col center">
+                        <h3 class="name d-none"></h3>
+                        <div class="spinner-grow text-primary d-none" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary shuffle" type="button">Sortear</button>
+					<button class="btn btn-secondary" type="button" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Popper.JS -->
@@ -1034,42 +1094,9 @@
 
     <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>    
 
-    <script>
-        $(document).ready(function () {
-            window.scrollTo(0,1);
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-            $('.dropdown-toggle').on('click', function() {
-                $(this).parent().toggleClass('active');
-            });
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
 
-            // Scroll to top button appear
-            $(document).on('scroll', function() {
-                var scrollDistance = $(this).scrollTop();
-                if (scrollDistance > 100) {
-                    $('.scroll-to-top').fadeIn();
-                } else {
-                    $('.scroll-to-top').fadeOut();
-                }
-            });
-
-            $(document).on('click', '.goTo[href*="#"]:not([href="#"])', function(){
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                    amount = ($(this).data('margin')?$(this).data('margin'):30)
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top-amount
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-            
-        });
-    </script>
+    <script src="script.js"></script>
     
 </body>
 </html>

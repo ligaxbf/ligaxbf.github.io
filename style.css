@@ -179,6 +179,20 @@ ul.components li.active {
     background: #181818;
 }
 
+.numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.slider.slider-horizontal {
+    width: 100%;
+}
+.custom-checkbox input,
+.custom-checkbox label {
+    cursor: pointer;
+}
+
 .scroll-to-top {
     position: fixed;
     right: 1rem;
