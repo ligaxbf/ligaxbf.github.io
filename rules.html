@@ -1063,8 +1063,16 @@
 					</button>
 				</div>
 				<div class="modal-body">
+                    <div class="col-sm-12 col-md-12 list-maps my-2">
+                        <p class="mb-3"><strong>Selecione os Mapas para sortear:</strong></p>
+                        <div class="custom-control custom-checkbox d-none">
+                            <input type="checkbox" class="custom-control-input" id="0" name="0">
+                            <label class="custom-control-label" for="0"></label>
+                        </div>
+                    </div>
+                    <hr>                    
                     <div class="col-sm-12 col-md-12 mb-2">
-                        <p>Quantos mapas serão sorteados:</p>
+                        <p class="mb-3"><strong>Quantos mapas serão sorteados:</strong></p>
                         <div class="numbers">
                             <span class="badge badge-pill badge-secondary">1</span>
                             <span class="badge badge-pill badge-secondary">2</span>
@@ -1076,14 +1084,6 @@
                             <input class="input-range" data-slider-id='ex1Slider' type="text" data-slider-min="1" data-slider-max="5" data-slider-step="1"  data-slider-split="true"  data-slider-value="1" />
                         </div>
                     </div>
-                    <p>Selecione os Mapas para sortear:</p>
-                    <div class="col-sm-12 col-md-12 list-maps">
-                        <div class="custom-control custom-checkbox d-none">
-                            <input type="checkbox" class="custom-control-input" id="0" name="0">
-                            <label class="custom-control-label" for="0"></label>
-                        </div>
-                    </div>
-                    
                     <div class="alert alert-warning alert-dismissible fade show d-none my-2" role="alert">
                         <p class="mb-0"></p>
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -1092,8 +1092,8 @@
                     </div>
 				</div>
 				<div class="modal-footer">
-                    <div class="escolha col center">
-                        <h3 class="name d-none"></h3>
+                    <div class="escolha col">
+                        <h3 class="name mb-0 d-none"></h3>
                         <div class="spinner-grow text-primary d-none" role="status">
                             <span class="sr-only">Loading...</span>
                         </div>
