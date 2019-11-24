@@ -22,6 +22,9 @@ body {
 .hr-b {
     border-bottom: 1px solid #ccc;
 }
+h6 {
+    font-weight: 700;
+}
 
 .wrapper {
     display: flex;

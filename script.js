@@ -103,8 +103,8 @@ $(document).ready(function () {
         } else {
             $('#mapsModal .alert').removeClass('d-none').show().find('p').text('Selecione pelo menos '+(parseInt(qntShort)+1)+' opções!');
             setTimeout(function(){
-                $('#mapsModal .alert').hide().addClass('d-none');
-            }, 5000);
+                $('#mapsModal .alert').fadeOut( "slow", function() { $(this).addClass('d-none'); });
+            }, 3000);
         }
     });
     // https://api.tracker.gg/api/v1/bfv/gamereports/xbl/direct/1197328868344236736    
