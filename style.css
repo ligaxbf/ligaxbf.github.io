@@ -25,6 +25,10 @@ body {
 h6 {
     font-weight: 700;
 }
+.link {
+    text-decoration: underline dotted;
+    color: #0c5460;
+}
 
 .wrapper {
     display: flex;

@@ -69,7 +69,8 @@ $(document).ready(function () {
         return arr;
     }
     
-    let maps = ["Arras", "Roterdã", "Hamada", "Fjell 652", "Al Sundan", "Devastação", "Narvik", "Mercúrio", "Marita", "Lofoten", "Provença", "Op. Subterrânea", "Iwo Jima", "Tormenta do Pacífico"],
+    let maps = ["Arras", "Roterdã", "Hamada", "Fjell 652", "Al Sundan", "Devastação", "Narvik", "Mercúrio", "Marita", "Lofoten", "Provença", "Op. Subterrânea"],
+        mapsdisabled = ["Iwo Jima", "Tormenta do Pacífico"],
         qntMaps = maps.length;
     
     
@@ -107,7 +108,20 @@ $(document).ready(function () {
             }, 3000);
         }
     });
-    // https://api.tracker.gg/api/v1/bfv/gamereports/xbl/direct/1197328868344236736    
-
     
+    $('.app').each(function() {
+        let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/windows phone/i.test(userAgent)) {
+            $(this).attr('href','httpss://www.microsoft.com/pt-br/store/apps/client-for-hangouts/9nblggh6ghbm');
+        }
+        if (/android/i.test(userAgent)) {
+            $(this).attr('href','https://play.google.com/store/apps/details?id=com.google.android.talk');
+        }
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            $(this).attr('href','https://apps.apple.com/br/app/hangouts/id643496868');
+        } else {
+            $(this).attr('href','https://hangouts.google.com/');
+        }
+    });
+
 });
