@@ -70,7 +70,7 @@ $(document).ready(function () {
     }
     
     let maps = ["Arras", "Roterdã", "Hamada", "Fjell 652", "Al Sundan", "Devastação", "Narvik", "Mercúrio", "Marita", "Lofoten", "Provença", "Op. Subterrânea"],
-        mapsdisabled = ["Iwo Jima", "Tormenta do Pacífico"],
+        mapsdisabled = ["Iwo Jima", "Tormenta do Pacífico", "Wake Island"],
         qntMaps = maps.length;
     
     
@@ -78,7 +78,8 @@ $(document).ready(function () {
         $('.list-maps').children('.custom-checkbox:first').clone().each(function() {
             let selected = maps[x];
             $(this).removeClass('d-none').find('input').attr('id', 'map_'+x).attr('name', 'map_'+x ).attr('data-label',selected);
-            $(this).find('label').attr('for', 'map_'+x ).text(selected);
+            $(this).find('label').attr('for', 'map_'+x );
+            $(this).find('.label').text(selected);
             value = this;
         }).end().parent().append(value);
     }

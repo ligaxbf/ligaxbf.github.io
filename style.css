@@ -211,19 +211,77 @@ ul.components li.active {
     color: #fff;
     background: rgba(90, 92, 105, 0.5);
     line-height: 46px;
-  }
-  
-  .scroll-to-top:focus, .scroll-to-top:hover {
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
     color: white;
-  }
-  
-  .scroll-to-top:hover {
+}
+
+.scroll-to-top:hover {
     background: #5a5c69;
-  }
-  
-  .scroll-to-top i {
+}
+
+.scroll-to-top i {
     font-weight: 800;
-  }
+}
+
+.custom-checkbox {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.label {
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+.onoffswitch {
+    position: relative; width: 75px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    padding-left: 0; float: left;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #FFFFFF; border-radius: 20px; margin-bottom: 0;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "SIM";
+    padding-left: 10px;
+    background-color: #34C240; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "NÃO";
+    padding-right: 10px;
+    background-color: #E00000; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; height: 18px; margin: 7px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 43px;
+    border: 2px solid #FFFFFF; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
 
 @media (max-width: 768px) {
     body {
