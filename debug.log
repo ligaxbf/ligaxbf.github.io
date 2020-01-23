@@ -13,3 +13,4 @@
 [0927/110213.537:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0927/110213.539:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [1116/112543.248:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[0123/161213.269:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
